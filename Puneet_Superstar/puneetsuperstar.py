@@ -1,4 +1,4 @@
-
+import os
 import discord
 from discord.ext import commands
 """import config"""
@@ -20,7 +20,7 @@ async def on_message(msg: discord.Message):
     if "puneet kaha hai".lower() in content.lower():
         await msg.reply("cheyaaaaaaaaaaaa mai yahaa hun")
 
-    cuss_word = ["madarchod","fuck","chutiye","chutiya"]
+    cuss_word = ["madarchod","fuck","chutiye","chutiya","mc","gandwe","rand","randi"]
     for i in cuss_word:
         if i.lower() in content.lower():
             await msg.reply(f"{i} bolega tu ab dekh tu batata hun m ab tujhe tu dekh")
